@@ -2,53 +2,132 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>İsviçre Rotam</title>
-<meta name="description" content="İsviçre Rotam — İsviçre için Türkçe yürüyüş ve dağ bisikleti navigasyonu. Gizlilik politikası, destek merkezi ve uygulama hakkında bilgi.">
-<meta name="theme-color" content="#14263B">
-<meta name="referrer" content="no-referrer">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1c3348">
+<meta name="description" content="İsviçre Rotam ile Alpler'i Türkçe keşfet. Yürüyüş ve MTB rotaları, swisstopo haritaları, rota boyunca hava tahmini ve İsviçre'ye özgü güvenlik bilgileri.">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:type" content="website">
+<meta property="og:title" content="İsviçre Rotam — Alpler'i Türkçe Keşfet">
+<meta property="og:description" content="İsviçre için Türkçe harita, rota planlama ve dağ koşulları.">
+<title>İsviçre Rotam — Alpler'i Türkçe Keşfet</title>
+<link rel="icon" type="image/png" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/premium.css">
 </head>
-<body>
+<body class="premium-home">
 <a class="skip" href="#icerik">İçeriğe geç</a>
-<header class="hero">
-  <nav class="nav" aria-label="Ana menü">
-    <a class="brand" href="./"><img src="assets/icon-96.png" alt="" width="40" height="40">İsviçre Rotam</a>
-    <ul>
-      <li><a class="tab" href="gizlilik/">Gizlilik</a></li>
-      <li><a class="tab" href="destek/">Destek</a></li>
-      <li><a class="tab" href="hakkinda/">Hakkında</a></li>
-    </ul>
-  </nav>
-  <div class="hero-inner">
-    <p class="eyebrow">İsviçre Rotam</p>
-    <h1>Alpler’i Türkçe keşfet.</h1>
-    <p class="lede">İsviçre’de yürüyüş ve dağ bisikleti için resmî verilere dayalı harita, rota planlama, navigasyon ve güvenlik bilgileri. Hesap yok, reklam yok.</p>
-  </div>
-</header>
 
+<div class="site-topbar">
+  <div class="topbar-inner">
+    <a class="site-brand" href="./" aria-label="İsviçre Rotam ana sayfa">
+      <img src="./assets/icon-96.png" alt="" width="44" height="44">
+      <span>İsviçre Rotam</span>
+    </a>
+    <details class="menu-box">
+      <summary>Menü <span class="menu-chevron" aria-hidden="true">⌄</span></summary>
+      <nav class="menu-list" aria-label="Site menüsü">
+        <a href="./">Ana Sayfa</a>
+        <a href="./#ozellikler">Özellikler</a>
+        <a href="./destek/">Destek</a>
+        <a href="./gizlilik/">Gizlilik</a>
+        <a href="./hakkinda/">Hakkında</a>
+        <a href="./hakkinda/#kaynaklar">Veri Kaynakları</a>
+        <a href="mailto:info@isvicrerotam.com">İletişim</a>
+      </nav>
+    </details>
+  </div>
+</div>
 <main id="icerik">
-  <div class="links">
-    <a class="link-card" href="gizlilik/"><b>Gizlilik Politikası</b><span>Hangi veriler cihazda kalır, hangileri hangi hizmete ne zaman gönderilir?</span><span class="go">Okuyun →</span></a>
-    <a class="link-card" href="destek/"><b>Destek Merkezi</b><span>Sık sorulan sorular, sorun giderme, beta geri bildirimi ve iletişim.</span><span class="go">Yardım alın →</span></a>
-    <a class="link-card" href="hakkinda/"><b>Hakkında</b><span>Uygulamanın özellikleri, ilkeleri ve veri kaynakları.</span><span class="go">Keşfedin →</span></a>
-  </div>
-  <div class="callout emergency" style="margin-top:20px">
-    <span class="title">Acil durumda: 112 · Rega 1414</span>
-    <p>İsviçre Rotam kurtarma ekiplerine bildirim göndermez; aramayı telefonunuzda siz başlatırsınız.</p>
-  </div>
+  <section class="scenic-hero" aria-labelledby="ana-baslik">
+    <img class="scenic-image" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Melchsee-Frutt.jpg/1280px-Melchsee-Frutt.jpg" srcset="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Melchsee-Frutt.jpg/1280px-Melchsee-Frutt.jpg 1280w, https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Melchsee-Frutt.jpg/3840px-Melchsee-Frutt.jpg 3840w" sizes="100vw" alt="Melchsee-Frutt'ta dağların göle yansıdığı İsviçre Alpleri manzarası" decoding="async" fetchpriority="high">
+    <div class="scenic-shade"></div>
+    <div class="scenic-inner">
+      <p class="hero-eyebrow">İSVİÇRE ROTAM — İSVİÇRE ALPLERİ</p>
+      <h1 id="ana-baslik">Alpler'i keşfet.<br>Rotanı Türkçe planla.</h1>
+      <p class="hero-description">İsviçre'nin yürüyüş yolları, dağ bisikleti rotaları, topoğrafik haritaları, hava tahminleri ve saha uyarıları. Tümünü kendi dilinde, tek bir uygulamada keşfet.</p>
+      <div class="hero-cta">
+        <a class="hero-primary" href="#ozellikler">Özellikleri keşfet <span aria-hidden="true">↗</span></a>
+        <span class="hero-secondary">iPhone için tasarlandı · iPad ile uyumlu</span>
+      </div>
+    </div>
+    <div class="hero-caption"><span>App Store yayınına hazırlanıyor</span><span>Fotoğraf: <a href="https://commons.wikimedia.org/wiki/File:Melchsee-Frutt.jpg" rel="noopener noreferrer">Stan45 · Melchsee-Frutt · kamu malı</a></span></div>
+  </section>
+
+  <section class="editorial-intro" id="ozellikler">
+    <p class="eyebrow-blue">İSVİÇRE'Yİ KEŞFETMENİN YENİ YOLU</p>
+    <h2>Her yolculuk için<br>doğru bilgiler.</h2>
+    <p>İsviçre Rotam, iki soruyu bir araya getiriyor: <strong>Nereye gitmek istiyorum?</strong> ve <strong>Yola çıkmadan önce ne bilmeliyim?</strong> Harita, rota ve dağ koşullarını birlikte düşünmek için geliştirildi.</p>
+  </section>
+
+  <section class="feature-editorial" aria-label="Uygulama özellikleri">
+    <article class="editorial-card">
+      <div class="editorial-icon" aria-hidden="true">↗</div><span class="feature-number">01 / HARİTA VE ROTALAR</span>
+      <h3>İsviçre, bütün ayrıntılarıyla.</h3>
+      <p>swisstopo haritaları, resmî yürüyüş ve MTB rotaları, yükseklik profilleri ve GPS konumu tek deneyimde.</p>
+      <span class="card-foot">Harita · Keşfet · Rota Planla</span>
+    </article>
+    <article class="editorial-card">
+      <div class="editorial-icon" aria-hidden="true">☼</div><span class="feature-number">02 / DAĞ HAVA DURUMU</span>
+      <h3>Hava, bulunduğun rakıma göre değişir.</h3>
+      <p>Seçtiğin rotada tahmini ilerleyişe bağlı sıcaklık, rüzgâr ve yağış bilgilerini görüntüle.</p>
+      <span class="card-foot">Saatlik · Rakıma göre · Kaynak bilgisiyle</span>
+    </article>
+    <article class="editorial-card">
+      <div class="editorial-icon" aria-hidden="true">✳</div><span class="feature-number">03 / SAHA GÜVENLİĞİ</span>
+      <h3>Belirsizliği gizlemeyen bir yaklaşım.</h3>
+      <p>SLF çığ bülteni, yol kapanmaları ve resmî uyarı kaynaklarına eriş. Veri yoksa tehlike yokmuş gibi davranılmaz.</p>
+      <span class="card-foot">Çığ · Uyarılar · Acil koordinatlar</span>
+    </article>
+  </section>
+
+  <section class="feature-split">
+    <div class="feature-split-visual" aria-label="Topoğrafik eş yükselti çizgilerini hatırlatan grafik"><div class="contour-pattern" aria-hidden="true"></div><div class="contour-copy"><span>İSVİÇRE'NİN AÇIK COĞRAFİ VERİLERİ</span><strong>Haritanın<br>ötesinde.</strong><small>Topoğrafya · Rota · Hava · Güvenlik</small></div></div>
+    <div class="feature-split-copy">
+      <span class="eyebrow-blue">DAĞLARI ANLAMAK İÇİN</span>
+      <h2>Sadece bir rota çizgisi değil.</h2>
+      <p>Haritada görünen bir yol, her zaman uygun veya güvenli olduğu anlamına gelmez. İsviçre Rotam, verilerin kaynağını ve sınırlarını açıkça gösterir.</p>
+      <a class="inline-link" href="hakkinda/">Uygulama hakkında <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+
+  <section class="four-points">
+    <div class="four-point"><span class="point-symbol">◎</span><strong>Çevrimdışı haritalar</strong><p>Desteklenen İsviçre harita bölgelerini önceden indir.</p></div>
+    <div class="four-point"><span class="point-symbol">⌖</span><strong>GPS ve GPX</strong><p>Rotanı kaydet, izle ve GPX dosyalarıyla çalış.</p></div>
+    <div class="four-point"><span class="point-symbol">◇</span><strong>Hesapsız kullanım</strong><p>Rotaların ve GPS kayıtların cihazında saklanır.</p></div>
+    <div class="four-point"><span class="point-symbol">✚</span><strong>Acil durum araçları</strong><p>Acil numaraları ve konum koordinatlarına hızlı eriş.</p></div>
+  </section>
+
+  <section class="launch-panel" id="yayin">
+    <p class="eyebrow-blue">ÇOK YAKINDA</p>
+    <h2>Yeni rotalar.<br>Yeni keşifler.</h2>
+    <p>İsviçre Rotam'ın iOS sürümü geliştirme ve test aşamasındadır. App Store yayını tamamlanana kadar burada uygulamayı keşfedebilir, destek ve bilgi için bize ulaşabilirsin.</p>
+    <div class="launch-actions"><span class="launch-pill">App Store yayınına hazırlanıyor</span><a href="destek/" class="launch-contact">İletişime geç <span aria-hidden="true">↗</span></a></div>
+  </section>
 </main>
 
-<footer>
-  <nav aria-label="Alt menü">
-    <a href="gizlilik/">Gizlilik Politikası</a>
-    <a href="destek/">Destek Merkezi</a>
-    <a href="hakkinda/">Hakkında</a>
-    <a href="mailto:bulent.imat@icloud.com">İletişim</a>
-  </nav>
-  <p>© 2026 Bülent İmat · İsviçre Rotam bağımsız bir uygulamadır.</p>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-about">
+      <a class="footer-logo" href="./"><img src="./assets/icon-96.png" alt="" width="40" height="40"> İsviçre Rotam</a>
+      <p>Alpler'i Türkçe keşfet.<br>İsviçre'ye özel bağımsız doğa ve rota uygulaması.</p>
+    </div>
+    <div class="footer-column">
+      <strong>Uygulama</strong>
+      <a href="./#ozellikler">Özellikler</a>
+      <a href="./hakkinda/">Hakkında</a>
+      <a href="./hakkinda/#kaynaklar">Veri Kaynakları</a>
+    </div>
+    <div class="footer-column">
+      <strong>Yardım ve iletişim</strong>
+      <a href="./destek/">Destek Merkezi</a>
+      <a href="./gizlilik/">Gizlilik Politikası</a>
+      <a href="mailto:destek@isvicrerotam.com">destek@isvicrerotam.com</a>
+      <a href="mailto:info@isvicrerotam.com">info@isvicrerotam.com</a>
+    </div>
+  </div>
+  <div class="footer-legal"><span>© 2026 İsviçre Rotam · isvicrerotam.com</span><span>Bağımsız uygulama · Resmî kurtarma hizmeti değildir.</span></div>
 </footer>
 </body>
 </html>

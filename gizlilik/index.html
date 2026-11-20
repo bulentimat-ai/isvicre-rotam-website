@@ -10,29 +10,39 @@
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
 <link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/premium.css">
 </head>
-<body>
+<body class="inner-page">
 <a class="skip" href="#icerik">İçeriğe geç</a>
-<header class="hero">
-  <nav class="nav" aria-label="Ana menü">
-    <a class="brand" href="../"><img src="../assets/icon-96.png" alt="" width="40" height="40">İsviçre Rotam</a>
-    <ul>
-      <li><a class="tab" href="../gizlilik/" aria-current="page">Gizlilik</a></li>
-      <li><a class="tab" href="../destek/">Destek</a></li>
-      <li><a class="tab" href="../hakkinda/">Hakkında</a></li>
-    </ul>
-  </nav>
-  <div class="hero-inner">
-    <p class="eyebrow">Gizlilik Politikası</p>
-    <h1>Verileriniz ve konumunuz</h1>
-    <p class="lede">İsviçre Rotam hangi verileri cihazınızda tutar, hangi verileri hangi hizmetlere ne zaman gönderir? Bu sayfada sade bir dille anlatıyoruz.</p>
-    <div class="meta">
-      <span class="pill">Yürürlük: 19 Kasım 2026</span>
-      <span class="pill">Uygulama sürümü 2.1.0</span>
-      <span class="pill">iOS</span>
-    </div>
+<div class="site-topbar">
+  <div class="topbar-inner">
+    <a class="site-brand" href="../" aria-label="İsviçre Rotam ana sayfa">
+      <img src="../assets/icon-96.png" alt="" width="44" height="44">
+      <span>İsviçre Rotam</span>
+    </a>
+    <details class="menu-box">
+      <summary>Menü <span class="menu-chevron" aria-hidden="true">⌄</span></summary>
+      <nav class="menu-list" aria-label="Site menüsü">
+        <a href="../">Ana Sayfa</a>
+        <a href="../#ozellikler">Özellikler</a>
+        <a href="../destek/">Destek</a>
+        <a href="../gizlilik/">Gizlilik</a>
+        <a href="../hakkinda/">Hakkında</a>
+        <a href="../hakkinda/#kaynaklar">Veri Kaynakları</a>
+        <a href="mailto:info@isvicrerotam.com">İletişim</a>
+      </nav>
+    </details>
   </div>
-</header>
+</div>
+
+<section class="subpage-hero">
+  <div class="subpage-hero-inner">
+    <p class="eyebrow-blue">GİZLİLİK POLİTİKASI</p>
+    <h1>Verileriniz ve konumunuz.</h1>
+    <p class="lede">İsviçre Rotam hangi verileri cihazda saklar, hangi bilgileri hangi hizmetlere ve ne zaman gönderir? Açık ve anlaşılır biçimde açıklıyoruz.</p>
+    <div class="meta"><span class="pill">Yürürlük: 20 Kasım 2026</span><span class="pill">Uygulama sürümü 2.1.0</span><span class="pill">iOS</span></div>
+  </div>
+</section>
 
 <main id="icerik">
   <article class="card">
@@ -70,11 +80,11 @@
 
     <h2 id="sorumlu">1. Sorumlu kişi ve iletişim</h2>
     <p>İsviçre Rotam, bağımsız geliştirici <strong>Bülent İmat</strong> tarafından geliştirilir ve yayımlanır. Bu politikada “biz” ve “geliştirici” ifadeleri onu anlatır.</p>
-    <p>Gizlilikle ilgili tüm sorularınız ve talepleriniz için: <a href="mailto:bulent.imat@icloud.com?subject=%C4%B0svi%C3%A7re%20Rotam%20%E2%80%93%20Gizlilik">bulent.imat@icloud.com</a></p>
+    <p>Gizlilikle ilgili sorularınız ve talepleriniz için: <a href="mailto:info@isvicrerotam.com?subject=%C4%B0svi%C3%A7re%20Rotam%20%E2%80%93%20Gizlilik">info@isvicrerotam.com</a></p>
     <p class="muted small">İsviçre Rotam; swisstopo, MeteoSwiss, SLF, SchweizMobil veya herhangi bir İsviçre kurumuyla bağlantılı değildir ve bu kurumlar tarafından onaylanmamıştır.</p>
 
     <h2 id="kapsam">2. Kapsam</h2>
-    <p>Bu politika, App Store’da yayımlanan <strong>İsviçre Rotam</strong> iOS uygulamasını (paket kimliği <code>com.bulentimat.isvicrerotam</code>, sürüm 2.1.0) ve bu destek web sitesini kapsar. Politika, uygulamanın kaynak kodunun incelenmesine dayanır ve uygulamanın gerçekte ne yaptığını anlatır.</p>
+    <p>Bu politika, <strong>İsviçre Rotam</strong> iOS uygulamasını (paket kimliği <code>com.bulentimat.isvicrerotam</code>, sürüm 2.1.0) ve bu destek web sitesini kapsar. Politika, uygulamanın kaynak kodunun incelenmesine dayanır ve uygulamanın gerçekte ne yaptığını anlatır.</p>
 
     <h2 id="cihaz">3. Cihazınızda saklanan veriler</h2>
     <p>Aşağıdaki veriler uygulamanın cihazınızdaki yerel veritabanında (SQLite) ve harita kütüphanesinin yerel deposunda tutulur. Geliştirici bu verilere erişemez.</p>
@@ -168,7 +178,7 @@
 
     <h2 id="haklar">13. Haklarınız</h2>
     <p>İsviçre Federal Veri Koruma Kanunu (nDSG/FADP) ve uygulanabildiği ölçüde AB Genel Veri Koruma Tüzüğü (GDPR) kapsamında; hakkınızda işlenen kişisel veriler hakkında bilgi alma, düzeltme, silme, işlemeye itiraz etme, işlemeyi kısıtlama ve veri taşınabilirliği haklarına sahipsiniz.</p>
-    <p>Geliştirici uygulamadan sizinle ilgili veri almadığı için, bu haklar uygulamada büyük ölçüde doğrudan sizin kontrolünüzdedir: cihazınızdaki verileri görüntüleyebilir, dışa aktarabilir (GPX) ve silebilirsiniz. Destek yazışmaları veya bu politika hakkındaki talepleriniz için <a href="mailto:bulent.imat@icloud.com">bulent.imat@icloud.com</a> adresine yazın; talebinize makul süre içinde yanıt veririz.</p>
+    <p>Geliştirici uygulamadan sizinle ilgili veri almadığı için, bu haklar uygulamada büyük ölçüde doğrudan sizin kontrolünüzdedir: cihazınızdaki verileri görüntüleyebilir, dışa aktarabilir (GPX) ve silebilirsiniz. Destek yazışmaları veya bu politika hakkındaki talepleriniz için <a href="mailto:info@isvicrerotam.com">info@isvicrerotam.com</a> adresine yazın; talebinize makul süre içinde yanıt veririz.</p>
     <p>Ayrıca bir veri koruma denetim makamına şikâyette bulunma hakkınız vardır. İsviçre’de bu makam <a href="https://www.edoeb.admin.ch/" rel="noopener">Federal Veri Koruma ve Bilgi Komiseri (EDÖB/FDPIC)</a>’dir; AB/AEA’da yaşıyorsanız ikamet ettiğiniz ülkenin veri koruma makamına başvurabilirsiniz.</p>
 
     <h2 id="guvenlik">14. Güvenlik</h2>
@@ -183,21 +193,36 @@
     <h2 id="site">16. Bu web sitesi</h2>
     <p>Bu destek sitesi GitHub Pages üzerinde barındırılan statik bir sitedir. Sitede çerez, analitik, reklam veya dış yazı tipi/komut dosyası kullanılmaz. Barındırma hizmeti olarak GitHub, Inc., siteyi ziyaret ettiğinizde güvenlik ve işletim amacıyla IP adresinizi kaydedebilir; bu işleme <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub Gizlilik Bildirimi</a>’ne tabidir.</p>
 
+    <p>Tanıtım ana sayfasındaki Melchsee-Frutt fotoğrafı <strong>Wikimedia Commons görsel sunucularından</strong> yüklenir. Görseller görüntülenirken tarayıcınız bu üçüncü taraf sunuculara bağlantı kurar; IP adresiniz ve standart teknik istek bilgileri bu sunuculara ulaşabilir. Bu görsel kamu malına bırakılmıştır. Görüntü sunucusunun kendi gizlilik koşulları geçerlidir. Sitede bizim tarafımızdan reklam, analitik veya takip komut dosyası kullanılmaz. Görselin ileride yerel olarak barındırılması değerlendirilmektedir.</p>
+
     <h2 id="degisiklik">17. Değişiklikler</h2>
     <p>Uygulamanın veri işleme biçimi değişirse (ör. yeni bir hizmet eklenirse) bu politikayı güncelleriz ve sayfanın üstündeki yürürlük tarihini değiştiririz. Önemli değişiklikleri uygulama güncellemesinin açıklamasında da belirtiriz.</p>
     <hr>
-    <p class="muted small">Son güncelleme: 19 Kasım 2026 · İsviçre Rotam 2.1.0 · Geliştirici: Bülent İmat · <a href="mailto:bulent.imat@icloud.com">bulent.imat@icloud.com</a></p>
+    <p class="muted small">Son güncelleme: 20 Kasım 2026 · İsviçre Rotam 2.1.0 · Geliştirici: Bülent İmat · <a href="mailto:info@isvicrerotam.com">info@isvicrerotam.com</a></p>
   </article>
 </main>
 
-<footer>
-  <nav aria-label="Alt menü">
-    <a href="../gizlilik/">Gizlilik Politikası</a>
-    <a href="../destek/">Destek Merkezi</a>
-    <a href="../hakkinda/">Hakkında</a>
-    <a href="mailto:bulent.imat@icloud.com">İletişim</a>
-  </nav>
-  <p>© 2026 Bülent İmat · İsviçre Rotam bağımsız bir uygulamadır.</p>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-about">
+      <a class="footer-logo" href="../"><img src="../assets/icon-96.png" alt="" width="40" height="40"> İsviçre Rotam</a>
+      <p>Alpler'i Türkçe keşfet.<br>İsviçre'ye özel bağımsız doğa ve rota uygulaması.</p>
+    </div>
+    <div class="footer-column">
+      <strong>Uygulama</strong>
+      <a href="../#ozellikler">Özellikler</a>
+      <a href="../hakkinda/">Hakkında</a>
+      <a href="../hakkinda/#kaynaklar">Veri Kaynakları</a>
+    </div>
+    <div class="footer-column">
+      <strong>Yardım ve iletişim</strong>
+      <a href="../destek/">Destek Merkezi</a>
+      <a href="../gizlilik/">Gizlilik Politikası</a>
+      <a href="mailto:destek@isvicrerotam.com">destek@isvicrerotam.com</a>
+      <a href="mailto:info@isvicrerotam.com">info@isvicrerotam.com</a>
+    </div>
+  </div>
+  <div class="footer-legal"><span>© 2026 İsviçre Rotam · isvicrerotam.com</span><span>Bağımsız uygulama · Resmî kurtarma hizmeti değildir.</span></div>
 </footer>
 </body>
 </html>
