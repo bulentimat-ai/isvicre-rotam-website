@@ -143,3 +143,136 @@ a:hover{text-decoration:underline}
   .premium-home .hero-caption{align-items:flex-start;justify-content:flex-end;gap:0}
   .premium-home .hero-caption span{font-size:11px}
 }
+
+/* Editorial information pages and shared footer — 2026-11-20
+   Scope these rules so the existing marketing hero, map preview, FAQ details
+   and legal disclosure cards keep their working appearance. */
+.editorial-info main{
+  max-width:960px;
+  margin:0 auto;
+  padding:70px 28px 105px;
+  position:relative;
+  z-index:1;
+}
+.information-section{max-width:875px;margin:0 auto}
+.information-section h2{
+  color:#1b344c;
+  font-size:clamp(27px,3.1vw,38px);
+  font-weight:750;
+  letter-spacing:-.035em;
+  line-height:1.24;
+  margin:56px 0 19px;
+}
+.information-section h2:first-child{margin-top:0}
+.information-section h3{font-size:21px;color:#18384b;line-height:1.35;margin:0 0 18px}
+.information-section p,
+.information-section li{font-size:17px;color:#40586c;line-height:1.8;margin:0 0 18px}
+.information-section a{color:#1b6658;text-underline-offset:4px;overflow-wrap:anywhere}
+.information-section .outlined-note{
+  background:#ecf2f5;
+  border:1px solid #d5e2e6;
+  border-left:5px solid #287c69;
+  border-radius:20px;
+  padding:27px 30px 19px;
+  margin:20px 0 46px;
+}
+.information-section .outlined-note p:last-child{margin-bottom:12px}
+.information-section .outlined-note strong{color:#223c51}
+.information-section .outlined-note .email-row{font-weight:760;font-size:19px;line-height:1.5}
+.information-section .outlined-note a{font-weight:700}
+.information-section .safety-note{
+  background:#fff4e9;
+  border:1px solid #e6d2ae;
+  border-left:5px solid #bb883a;
+  padding:22px 26px;
+  border-radius:14px;
+  margin-top:20px
+}
+.information-section .safety-note>strong{color:#6c481b}
+.information-section .safety-note p{margin:11px 0 0;font-size:16px}
+.information-section .document-date{font-size:14px;color:#698090}
+.faq-overview{margin-bottom:22px}
+.faq-overview h2{font-size:23px;letter-spacing:-.025em;margin:0 0 21px}
+.faq-categories{display:flex;flex-wrap:wrap;gap:10px}
+.faq-categories a{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:9px 14px;min-height:43px;border:1px solid #ccdadb;
+  border-radius:30px;background:#f2f7f6;
+  text-decoration:none;color:#235e53;
+  font-size:14px;font-weight:700
+}
+.faq-categories a:hover{background:#deebe8;text-decoration:none}
+.faq-categories a:focus-visible{outline:3px solid #80b8ab;outline-offset:2px}
+.simple-panel{
+  background:#e8eff1;
+  border:1px solid #d9e4e5;
+  padding:29px 36px;
+  border-radius:18px;
+  margin:30px 0 10px
+}
+.simple-panel h2{font-size:25px;margin:0 0 9px}
+.simple-panel p{margin:0 0 17px;color:#546a77}
+.text-route{font-weight:760;color:#206653}
+.site-footer{
+  padding-top:81px;
+  padding-bottom:35px;
+}
+.site-footer .footer-grid{
+  grid-template-columns:minmax(0,2.2fr) minmax(155px,1fr) minmax(180px,1fr);
+  gap:55px;
+  padding-bottom:60px
+}
+.site-footer .footer-about .footer-logo{
+  font-size:21px;line-height:1.4;
+  max-width:410px;
+  display:flex;
+  align-items:center
+}
+.site-footer .footer-about p{
+  font-size:15px;line-height:1.8;
+  max-width:490px;
+  margin:22px 0 0
+}
+.site-footer .footer-column strong{font-size:17px;margin-bottom:10px}
+.site-footer .footer-column a{font-size:15px;line-height:1.7}
+.site-footer .footer-legal{
+  display:block;
+  padding-top:31px;
+  color:#aebfc9;
+  line-height:1.85;
+  font-size:12px
+}
+.site-footer .footer-legal span{display:inline}
+.site-footer .footer-legal span+span:before{content:" · ";padding:0 6px}
+.site-footer .footer-legal a{color:#d3e6e6;text-underline-offset:3px}
+@media(max-width:850px){
+  .site-footer .footer-grid{grid-template-columns:1fr 1fr;gap:40px}
+  .site-footer .footer-about{grid-column:1/-1}
+}
+@media(max-width:640px){
+  .editorial-info main{padding:60px 21px 80px}
+  .information-section h2{margin:46px 0 16px;font-size:31px}
+  .information-section p{font-size:17px;line-height:1.75}
+  .information-section .outlined-note{padding:25px 22px 15px;margin-bottom:40px}
+  .information-section .outlined-note .email-row{font-size:17px}
+  .site-footer{padding:65px 22px 37px}
+  .site-footer .footer-grid{
+    display:flex;
+    flex-direction:column;
+    gap:47px;
+    padding-bottom:61px
+  }
+  .site-footer .footer-about{grid-column:auto}
+  .site-footer .footer-about .footer-logo{font-size:21px}
+  .site-footer .footer-about p{font-size:16px;margin-top:23px}
+  .site-footer .footer-column{gap:14px}
+  .site-footer .footer-column strong{font-size:18px;margin-bottom:5px}
+  .site-footer .footer-column a{font-size:16px}
+  .site-footer .footer-legal span{display:block}
+  .site-footer .footer-legal span+span:before{display:none}
+  .site-footer .footer-legal span+span{margin-top:10px}
+  .faq-overview{padding:22px 18px}
+  .faq-categories{gap:9px}
+  .faq-categories a{padding:8px 11px;font-size:13px}
+  .simple-panel{padding:23px 20px}
+}
