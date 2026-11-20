@@ -12,28 +12,37 @@
 <link rel="stylesheet" href="../assets/style.css">
 <link rel="stylesheet" href="../assets/premium.css">
 </head>
-<body>
+<body class="inner-page">
 <a class="skip" href="#icerik">İçeriğe geç</a>
-<header class="hero">
-  <nav class="nav" aria-label="Ana menü">
-    <a class="brand" href="../"><img src="../assets/icon-96.png" alt="" width="40" height="40">İsviçre Rotam</a>
-    <ul>
-      <li><a class="tab" href="../gizlilik/">Gizlilik</a></li>
-      <li><a class="tab" href="../destek/">Destek</a></li>
-      <li><a class="tab" href="../hakkinda/" aria-current="page">Hakkında</a></li>
-    </ul>
-  </nav>
-  <div class="hero-inner">
-    <p class="eyebrow">İsviçre Rotam Hakkında</p>
-    <h1>Alpler’i Türkçe keşfet.</h1>
-    <p class="lede">İsviçre’de yürüyüş ve dağ bisikleti için resmî İsviçre verilerine dayanan, tamamen Türkçe bir harita, rota planlama ve navigasyon uygulaması.</p>
-    <div class="meta">
-      <span class="pill">iPhone ve iPad</span>
-      <span class="pill">Sürüm 2.1.0</span>
-      <span class="pill">Hesap gerektirmez</span>
-    </div>
+<div class="site-topbar">
+  <div class="topbar-inner">
+    <a class="site-brand" href="../" aria-label="İsviçre Rotam ana sayfa">
+      <img src="../assets/icon-96.png" alt="" width="44" height="44">
+      <span>İsviçre Rotam</span>
+    </a>
+    <details class="menu-box">
+      <summary>Menü <span class="menu-chevron" aria-hidden="true">⌄</span></summary>
+      <nav class="menu-list" aria-label="Site menüsü">
+        <a href="../">Ana Sayfa</a>
+        <a href="../#ozellikler">Özellikler</a>
+        <a href="../destek/">Destek</a>
+        <a href="../gizlilik/">Gizlilik</a>
+        <a href="../hakkinda/">Hakkında</a>
+        <a href="../hakkinda/#kaynaklar">Veri Kaynakları</a>
+        <a href="mailto:info@isvicrerotam.com">İletişim</a>
+      </nav>
+    </details>
   </div>
-</header>
+</div>
+
+<section class="subpage-hero">
+  <div class="subpage-hero-inner">
+    <p class="eyebrow-blue">İSVİÇRE ROTAM HAKKINDA</p>
+    <h1>Alpler'i Türkçe keşfet.</h1>
+    <p class="lede">İsviçre'nin topoğrafyasını, yürüyüş ve dağ bisikleti rotalarını, hava tahminlerini ve saha bilgilerini bir araya getiren bağımsız outdoor uygulaması.</p>
+    <div class="meta"><span class="pill">iPhone ve iPad</span><span class="pill">Hesap gerektirmez</span></div>
+  </div>
+</section>
 
 <main id="icerik">
   <section class="card" aria-labelledby="ne">
@@ -86,14 +95,27 @@
   </section>
 </main>
 
-<footer>
-  <nav aria-label="Alt menü">
-    <a href="../gizlilik/">Gizlilik Politikası</a>
-    <a href="../destek/">Destek Merkezi</a>
-    <a href="../hakkinda/">Hakkında</a>
-    <a href="mailto:info@isvicrerotam.com">İletişim</a>
-  </nav>
-  <p>© 2026 Bülent İmat · İsviçre Rotam bağımsız bir uygulamadır.</p>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-about">
+      <a class="footer-logo" href="../"><img src="../assets/icon-96.png" alt="" width="40" height="40"> İsviçre Rotam</a>
+      <p>Alpler'i Türkçe keşfet.<br>İsviçre'ye özel bağımsız doğa ve rota uygulaması.</p>
+    </div>
+    <div class="footer-column">
+      <strong>Uygulama</strong>
+      <a href="../#ozellikler">Özellikler</a>
+      <a href="../hakkinda/">Hakkında</a>
+      <a href="../hakkinda/#kaynaklar">Veri Kaynakları</a>
+    </div>
+    <div class="footer-column">
+      <strong>Yardım ve iletişim</strong>
+      <a href="../destek/">Destek Merkezi</a>
+      <a href="../gizlilik/">Gizlilik Politikası</a>
+      <a href="mailto:destek@isvicrerotam.com">destek@isvicrerotam.com</a>
+      <a href="mailto:info@isvicrerotam.com">info@isvicrerotam.com</a>
+    </div>
+  </div>
+  <div class="footer-legal"><span>© 2026 İsviçre Rotam · isvicrerotam.com</span><span>Bağımsız uygulama · Resmî kurtarma hizmeti değildir.</span></div>
 </footer>
 </body>
 </html>
