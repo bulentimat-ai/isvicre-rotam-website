@@ -102,3 +102,44 @@ a:hover{text-decoration:underline}
 @media(max-width:640px){.topbar-inner{height:75px}.site-brand{font-size:21px}.site-brand img{width:41px;height:41px}.scenic-hero{min-height:calc(100svh - 75px);min-height:740px}.scenic-image{object-position:58% 50%}.scenic-shade{background:linear-gradient(90deg,rgba(13,29,45,.79),rgba(13,29,45,.40)),linear-gradient(0deg,rgba(9,28,44,.51),transparent 50%)}.scenic-inner{width:calc(100% - 38px);padding:80px 0 125px}.hero-eyebrow{font-size:12px;letter-spacing:.16em;margin-bottom:27px}.scenic-inner h1{font-size:clamp(45px,10vw,65px);letter-spacing:-.052em}.hero-description{font-size:18px;line-height:1.7}.hero-secondary{font-size:14px}.hero-caption{padding:15px 19px;display:flex;align-items:flex-start;flex-direction:column;gap:3px;font-size:10px}.editorial-intro{padding:82px 22px 47px}.editorial-intro h2,.feature-split h2,.launch-panel h2{font-size:clamp(40px,8.3vw,55px)}.editorial-intro>p:last-child{font-size:18px}.feature-editorial{width:calc(100% - 36px);grid-template-columns:1fr;gap:15px;margin-bottom:78px}.editorial-card{min-height:340px;padding:27px}.editorial-card:last-child{grid-column:auto}.editorial-card h3{font-size:27px}.feature-split{grid-template-columns:1fr}.feature-split-visual{min-height:350px}.feature-split-copy{padding:65px 25px}.four-points{grid-template-columns:1fr 1fr;gap:35px 20px;width:calc(100% - 44px);padding:70px 0}.launch-panel{padding:74px 22px 82px}.launch-panel>p:not(.eyebrow-blue){font-size:16px}.site-footer{padding:55px 22px 25px}.footer-grid{grid-template-columns:1fr 1fr;gap:38px 20px}.footer-about{grid-column:1/-1}.subpage-hero{padding:64px 0 110px}.subpage-hero-inner{width:calc(100% - 40px)}.subpage-hero h1{font-size:clamp(37px,8vw,54px)}.inner-page main{padding:0 14px 60px;margin-top:-49px}}
 @media(max-width:390px){.site-brand{font-size:18px}.site-brand img{width:35px;height:35px}.menu-box>summary{font-size:14px;padding:8px 15px;min-height:42px}.scenic-inner h1{font-size:43px}.scenic-hero{min-height:760px}.hero-cta{align-items:flex-start;flex-direction:column}.hero-secondary{min-height:48px;padding:11px 17px}.four-points{grid-template-columns:1fr 1fr}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.menu-chevron{transition:none}}
+
+/* November 2026 production bug fix: legacy FAQ 'details' styling was also applied
+   to the site menu, producing an empty white rectangle on Safari. */
+.site-topbar details.menu-box,
+.site-topbar details.menu-box[open]{
+  position:relative;flex:none;display:block;
+  margin:0;padding:0;border:0;border-radius:0;
+  background:transparent;box-shadow:none;
+  color:#fff;
+}
+.site-topbar details.menu-box > summary{
+  -webkit-appearance:none;appearance:none;list-style:none;
+  display:inline-flex;align-items:center;justify-content:center;gap:11px;
+  margin:0;padding:10px 21px;min-height:47px;min-width:104px;
+  border:1px solid rgba(255,255,255,.55);border-radius:999px;
+  background:transparent;box-shadow:none;
+  color:#fff;font-size:16px;font-weight:500;line-height:1.4;
+  cursor:pointer;white-space:nowrap;position:relative;
+}
+.site-topbar details.menu-box > summary::-webkit-details-marker{display:none}
+.site-topbar details.menu-box > summary::after{content:none;display:none}
+.site-topbar details.menu-box > summary .menu-label{display:inline;color:#fff;opacity:1}
+.site-topbar details.menu-box > summary .menu-chevron{display:inline;color:#fff;opacity:.85;transform-origin:center}
+.site-topbar details.menu-box > summary:hover,
+.site-topbar details.menu-box[open] > summary{background:rgba(255,255,255,.13)}
+.site-topbar details.menu-box > summary:focus-visible{outline:3px solid #b5e6d6;outline-offset:3px}
+.site-topbar details.menu-box .menu-list{color:#fff;background:#0e2238}
+.site-topbar details.menu-box .menu-list a{color:#f2f6f8}
+.premium-home .scenic-image{object-position:65% 48%}
+.premium-home .scenic-shade{background:linear-gradient(90deg,rgba(11,28,44,.87),rgba(13,31,45,.52) 60%,rgba(11,28,44,.14)),linear-gradient(0deg,rgba(11,28,44,.42),transparent 40%)}
+.premium-home .hero-caption{justify-content:flex-end}
+.premium-home .hero-caption a{color:#f2f6f5}
+.inner-page .subpage-hero{background:linear-gradient(120deg,#1c3348,#123848)}
+.inner-page .card{border-radius:18px;border:1px solid #dee9ee;box-shadow:0 14px 38px rgba(16,45,59,.06)}
+.inner-page .fact,.inner-page .feature,.inner-page details:not(.menu-box){border-radius:13px}
+@media(max-width:640px){
+  .site-topbar details.menu-box>summary{padding:9px 15px;min-width:95px;min-height:44px;font-size:15px}
+  .premium-home .scenic-image{object-position:65% center}
+  .premium-home .hero-caption{align-items:flex-start;justify-content:flex-end;gap:0}
+  .premium-home .hero-caption span{font-size:11px}
+}
