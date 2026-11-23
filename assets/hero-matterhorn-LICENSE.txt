@@ -1,0 +1,10 @@
+Photograph: Matterhorn 2026-07-13.jpg
+Description: The Matterhorn reflected in an alpine lake.
+Photographer: Haw777
+Date: 13 July 2026
+Original: https://commons.wikimedia.org/wiki/File:Matterhorn_2026-07-13.jpg
+Original file: https://upload.wikimedia.org/wikipedia/commons/b/b8/Matterhorn_2026-07-13.jpg
+License: Creative Commons CC0 1.0 Universal Public Domain Dedication
+License URL: https://creativecommons.org/publicdomain/zero/1.0/
+SHA-1 (original): ee9d3246d40502129c7906fcbca12d75dea523f6
+Downloaded directly from Wikimedia Commons without modification.
