@@ -24,3 +24,12 @@ body.editorial-subpage{background:#f5fafc;color:#112c40}
 .editorial-subpage .site-footer{margin:0}
 @media(max-width:760px){.editorial-subpage main .subhead{padding:54px 0 25px}.editorial-subpage main .page{padding-bottom:68px}}
 @media(max-width:480px){.editorial-subpage main .subhead,.editorial-subpage main .page{width:calc(100% - 30px)}.editorial-subpage main .subhead h1{font-size:36px}.editorial-subpage main .page>section{padding:21px 18px}.editorial-subpage main .page p,.editorial-subpage main .page li{font-size:16px}}
+
+/* The legacy subpage CSS used .nav for the entire header. Restrict it to a
+   compact inline desktop navigation in the new shared header instead. */
+.editorial-subpage .site-header .nav{
+  max-width:none;min-height:0;padding:0;margin:0 0 0 auto;
+  flex:0 1 auto;flex-wrap:nowrap;justify-content:flex-end;
+}
+.editorial-subpage .site-header .nav ul{width:auto;flex-wrap:nowrap}
+@media(max-width:1080px){.editorial-subpage .site-header .nav{display:none}}
