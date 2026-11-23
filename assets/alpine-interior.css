@@ -1,0 +1,26 @@
+/* Swiss Alpine Routes companion interior design — light editorial layout.
+   Existing legal/support/FAQ copy is not changed. */
+body.editorial-subpage{background:#f5fafc;color:#112c40}
+.editorial-subpage main{display:block;max-width:none;margin:0;padding:0;min-height:60vh;position:relative;z-index:1;background:#f5fafc}
+.editorial-subpage main .subhead{width:min(900px,calc(100% - 40px));max-width:900px;padding:62px 0 25px;margin:0 auto}
+.editorial-subpage main .subhead h1{color:#123249;font-size:clamp(34px,5vw,50px);line-height:1.1;letter-spacing:-.025em;margin:9px 0 14px;max-width:none;overflow-wrap:break-word}
+.editorial-subpage main .subhead .kicker{color:#287966;font-size:12px;letter-spacing:.13em}
+.editorial-subpage main .subhead .lead{color:#536a79;font-size:clamp(17px,2vw,20px);line-height:1.6;max-width:70ch;margin:0}
+.editorial-subpage main .page{width:min(900px,calc(100% - 40px));max-width:900px;margin:0 auto;padding:10px 0 88px}
+.editorial-subpage main .page>section{background:#fff;border:1px solid #dbe6e9;border-radius:18px;box-shadow:0 10px 30px rgba(14,42,71,.05);padding:clamp(21px,3.5vw,34px);margin:0 0 20px}
+.editorial-subpage main .page section :first-child{margin-top:0}
+.editorial-subpage main .page section :last-child{margin-bottom:0}
+.editorial-subpage main .page h2{color:#13334b;font-size:clamp(23px,3.2vw,30px);line-height:1.22;letter-spacing:-.025em;margin:4px 0 14px}
+.editorial-subpage main .page h3{color:#143a50;font-size:21px}
+.editorial-subpage main .page p,.editorial-subpage main .page li{color:#4a6076;font-size:16.5px;line-height:1.75}
+.editorial-subpage main .page a{color:#17614f;text-underline-offset:4px;overflow-wrap:anywhere}
+.editorial-subpage main .page a:hover{color:#0c493c}
+.editorial-subpage main .page b,.editorial-subpage main .page strong{color:#14334a}
+.editorial-subpage main .page .notice{background:#fff7e9;color:#654f28;border-left:4px solid #c68f3f}
+.editorial-subpage main .page .notice p,.editorial-subpage main .page .notice li{color:#654f28}
+.editorial-subpage main .page details{background:#fff;color:#122c40;border:1px solid #dbe6e9;border-radius:14px;margin-bottom:12px}
+.editorial-subpage main .page details summary{color:#15364b;font-weight:700}
+.editorial-subpage main .page details .body{color:#4a6076}
+.editorial-subpage .site-footer{margin:0}
+@media(max-width:760px){.editorial-subpage main .subhead{padding:54px 0 25px}.editorial-subpage main .page{padding-bottom:68px}}
+@media(max-width:480px){.editorial-subpage main .subhead,.editorial-subpage main .page{width:calc(100% - 30px)}.editorial-subpage main .subhead h1{font-size:36px}.editorial-subpage main .page>section{padding:21px 18px}.editorial-subpage main .page p,.editorial-subpage main .page li{font-size:16px}}
