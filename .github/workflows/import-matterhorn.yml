@@ -1,0 +1,61 @@
+name: Import CC0 Matterhorn hero photograph
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/import-matterhorn.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import-verified-photo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout website
+        uses: actions/checkout@v4
+
+      - name: Download and verify original CC0 photograph
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p assets
+          curl --fail --location --retry 5 --retry-all-errors --retry-delay 3 \
+            --user-agent 'SwissAlpineRoutesWebsite/1.0 (info@isvicrerotam.com)' \
+            --output assets/hero-matterhorn-2026.jpg \
+            'https://upload.wikimedia.org/wikipedia/commons/b/b8/Matterhorn_2026-07-13.jpg'
+          echo 'ee9d3246d40502129c7906fcbca12d75dea523f6  assets/hero-matterhorn-2026.jpg' | sha1sum --check
+          file assets/hero-matterhorn-2026.jpg
+          test "$(stat -c %s assets/hero-matterhorn-2026.jpg)" -gt 100000
+
+      - name: Record original image provenance
+        shell: bash
+        run: |
+          cat > assets/hero-matterhorn-LICENSE.txt <<'EOF'
+          Photograph: Matterhorn 2026-07-13.jpg
+          Description: The Matterhorn reflected in an alpine lake.
+          Photographer: Haw777
+          Date: 13 July 2026
+          Original: https://commons.wikimedia.org/wiki/File:Matterhorn_2026-07-13.jpg
+          Original file: https://upload.wikimedia.org/wikipedia/commons/b/b8/Matterhorn_2026-07-13.jpg
+          License: Creative Commons CC0 1.0 Universal Public Domain Dedication
+          License URL: https://creativecommons.org/publicdomain/zero/1.0/
+          SHA-1 (original): ee9d3246d40502129c7906fcbca12d75dea523f6
+          Downloaded directly from Wikimedia Commons without modification.
+          EOF
+
+      - name: Commit locally hosted Matterhorn image
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/hero-matterhorn-2026.jpg assets/hero-matterhorn-LICENSE.txt
+          if git diff --cached --quiet; then
+            echo 'Already present; no changes needed.'
+          else
+            git commit -m 'Add verified CC0 Matterhorn lake photo (Haw777)'
+            git push
+          fi
